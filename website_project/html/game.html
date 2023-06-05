@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GAME</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/game.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="http://localhost:5555/socket.io/socket.io.js"></script>
+        <script defer src="js/game_client.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="logo">
+                <a href="/">LGCW</a>
+            </div>
+        </header>
+        <div id="game-container">
+            <div id="player-status">
+                <div id="bombs-status">
+                    <p id="object-text">Bombs</p>
+                    <div>
+                    <img src="img/c4.png" alt="bombs" id="bombs-img">
+                    <p id="colon">:</p>
+                    <p id="number-bombs">0</p>
+                    </div>
+                </div>
+                <div id="health-status">
+                    <p id="object-text">Health</p>
+                    <div>
+                        <img src="img/health.png" alt="health" id="health-img">
+                        <p id="colon">:</p>
+                        <!-- <img src="img/health_bar.png" alt="health-bar" id="health-bar"> -->
+                        <!-- <div id="health-progress-bar-placement"> -->
+                        <!-- <img src="img/health_bar.png" alt="health-bar" id="health-bar"> -->
+                        
+                        
+                        <div id="health-progress-container">
+                            <div id="health-progress">
+                                <div id="health-back">
+                                    <div id="bar">
+                                    </div>
+                                    <p id="health-text">100%</p>
+                                </div>
+                                <img src="img/health_bar.png" alt="health-bar" id="health-bar">
+                            </div>
+                        </div>
+
+                        <!-- </div> -->
+                        <!-- <p id="number-health">75/100</p> -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="below-player-status">
+                <div id="players-div">
+                <table id="players">
+                    <tr>
+                        <th>Players</th>
+                        <th>Health</th>
+                        <th>Bombs</th>
+                        <th>Drop Bomb</th>
+                    </tr>
+                </table>
+                </div>
+                <div id="quest">
+                    <p id="quest-text">Quest</p>
+                    <p id="quest-itself"></p>
+                    <div class="image-preview" id="image-preview">
+                        <img src="" alt="quest image" id="quest-img">
+                    </div>
+                    <img src="img/exploded_clue.png" alt="clue exploded" id="clue-background">
+                    <div id="clue-div">
+                        <p id="clue-text">Clue</p>
+                        <p id="clue-itself"></p>
+                    </div>
+                    <form id="answer-form">
+                        <label class="field-label">
+                            <p id="answer-text">Answer</p>
+                            <p id="flag-format">Flags Fromat: lgcw{FLAG}</p>
+                            <input type="text" class="input-box" id="answer" name="flag" required>
+                        </label>
+                        <button type="button" id="submit-flag" onclick="checkAnswer()">Submit</button>
+                        <button type="button" id="clue" onclick="getClue()">Clue</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

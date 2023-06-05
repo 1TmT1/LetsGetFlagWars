@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>add regular quest</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/add_regular_quest.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="add-regular-quest-form">
+            <!-- <img src=""> -->
+            <h1>Regular Quest</h1>
+            <p class="note">Optional:</p>
+            <hr>
+            <form class="form" id="upload-form">
+                <input type="file" name="input-file" id="input-file">
+                <div class="image-preview" id="image-preview">
+                    <img src="" alt="Image Preview" class="image-preview-itself" id="image-preview-itself">
+                    <span class="image-preview-text" id="image-preview-text">Image Preview</span>
+                    <span class="bad-file-type" id="bad-file-type">Bad File Type - File is Not an Image!</span>
+                </div>
+                <input type="submit" class="button" id="submit-image-btn" value="upload">
+            </form>
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress-bar-fill" id="progress-bar-fill">
+                    <span class="progress-bar-text" id="progress-bar-text">0%</span>
+                </div>
+            </div>
+            <hr>
+            <form id="add-quest-form" method="post">
+                <p id="required-text">Required:</p>
+                <hr>
+                <label class="field-label">
+                    <input type="text" class="input-box" name="quest" required>
+                    <div class="label-text">Quest</div>
+                </label>
+                <label class="field-label">
+                    <input type="text" class="input-box" name="clue" required>
+                    <div class="label-text">Clue</div>
+                </label>
+                <label class="field-label">
+                    <input type="text" class="input-box" name="answer" required>
+                    <div class="label-text">Answer</div>
+                </label>
+                <hr>
+                <button type="submit" class="button" id="add-quest-button">Add Quest!</button>
+            </form>
+        </div>
+        <script src="js/add_regular_quest.js"></script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Quest</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/add_quest.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script defer src="js/add_quest.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="quest_type_wrap">
+                <h2>Please Select The Quest Type</h2>
+                <div class="quest_type_container">
+                    <label class="radio_container_quest_type">
+                        <input type="radio" name="quest_type" class="quest_radio" id="regular_quest">
+                        <div class="radio_inner">
+                            <img src="img/btn_not_selected.png" alt="button not selected" class="checkmark"></img>
+                            <div class="type_quest_icon_wrapper">
+                                <img src="img/sprite_selection_background.png" alt="quest type backgroung" class="quest_type_icon_background"></img>
+                                <img src="img/regular_quest_icon.png" alt="regular quest type icon" class="quest_type_icon"></img>
+                            </div>
+                            <div class="info">Regular Quest</div>
+                        </div>
+                    </label>
+                </div>
+                <p id="not_selected_message">You didn't select something!</p>
+                <button type="button" class="next" onclick="checkSelectedRadio()">Next!</button>
+            </div>
+        </div>
+    </body>
+</html>

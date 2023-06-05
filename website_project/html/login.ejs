@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/login_style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LOGIN</title>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="logo">
+                <a href="/">LGCW</a>
+            </div>
+
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="menu-icon-line"></span>
+            </label>
+
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="login">Login</a>
+                </li>
+                <li class="nav-link">
+                    <a href="sign_up">Sign Up</a>
+                </li>
+            </ul>
+        </header>
+
+        <div class="login-form">
+            <img src="">
+            <h1>Login Now!-)</h1>
+            <form action="login" method="post">
+                <label class="field-label">
+                    <input type="email" class="input-box" name="email" required>
+                    <div class="label-text">Email</div>
+                </label>
+                <label class="field-label">
+                    <input type="password" class="input-box" name="password" required>
+                    <div class="label-text">Password</div>
+                </label>
+                <p><%= error_message %></p>
+                <br>
+                <button type="submit" class="login-button">Login</button>
+                <hr>
+                <p class="or">OR</p>
+                <a href="sign_up"><button type="button" class="sign-up-button">Sign Up</button></a>
+                <p class="reset-password">Forgot your password? <a href="/reset_password">Reset It!</a></p>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/index_logic.js"></script>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(175, 175, 175);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.add-regular-quest-form{
+    position: absolute;
+    margin-top: 50px;
+    left: 40%;
+    
+    border-radius: 5px;
+    width: 340px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+    background-color: rgb(212, 212, 212);
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.field-label{
+    display: block;
+    letter-spacing: 3px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.label-text{
+    position: relative;
+    bottom: 35px;
+}
+
+.field-label .label-text{
+    color: grey;
+    cursor: text;
+    font-size: 17px;
+    line-height: 17px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.field-label input:focus + .label-text{
+    color: darkslategray;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    transform: translateY(-60px);
+    transition: 0.3s ease;
+}
+
+/* input field animation */
+.field-label input:focus{
+    max-width: 100%;
+    width: 330px;
+    transition: 0.5s ease;
+}
+
+.input-box{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 75%;
+    border: 1px solid rgb(30, 50, 50);
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Animation from validation (For empty required input fields) */
+.field-label input:valid + .label-text{
+    font-size: 14px;
+    transform: translateY(-60px);
+}
+
+.button{
+    color: rgb(212, 212, 212);
+    background-color: rgb(73, 73, 73);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.button:hover{
+    color: rgb(73, 73, 73);
+    background-color: whitesmoke;
+    border: 2px solid rgb(175, 175, 175);
+    transition: 0.5s ease;
+}
+
+.note{
+    text-transform: uppercase;
+}
+
+#file-text{
+    text-transform: lowercase;
+}
+
+.progress-bar{
+    height: 35px;
+    border: 2px solid black;
+}
+
+.progress-bar-fill{
+    height: 100%;
+    width: 0%;
+    background-color: rgb(22, 158, 22);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    transition: width 0.25s ease;
+}
+
+.progress-bar-text{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.image-preview{
+    min-height: 100px;
+    border: 2px solid gray;
+    margin-top: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+}
+
+.image-preview-itself{
+    display: none;
+    width: 100%;
+}
+
+.image-preview-text{
+    letter-spacing: 1.5px;
+    color: black;
+    transition: 0.5s ease;
+}
+
+#required-text{
+    text-transform: uppercase;
+}
+
+.bad-file-type{
+    display: none;
+    color: rgb(212, 212, 212);
+    letter-spacing: 1.5px;
+    transition: 0.5s ease;
+}
+
+/*Customize scrollbar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(212, 212, 212);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(129, 129, 129);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: darkslategray;
+}

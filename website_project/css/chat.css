@@ -1,0 +1,106 @@
+#chat{
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgb(129, 129, 129);
+    border-radius: 40px;
+    max-width: 100%
+}
+
+#chat-title h2{
+    color:whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+    display: inline-block;
+} 
+
+#chat-title button{
+    position: relative;
+    bottom: 15px;
+    width: 75px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(129, 129, 129);
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#chat-title button:hover{
+    background-color: rgb(160, 160, 160);
+    transition: 0.4s ease;
+}
+
+#message-container{
+    flex: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    margin-bottom: 10px;
+    max-height: 100%;
+    word-break: break-all;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.messages-by-user{
+    background-color: rgb(161, 159, 118);
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    left: 170px;
+}
+
+.messages{
+    background-color: rgb(129, 129, 129);
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#send-container{
+  position: relative;
+  left: 45px;
+}
+
+form input{
+    flex: 1;
+    width: 150px;
+    height: 20px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form button{
+    width: 75px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(129, 129, 129);
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover{
+    background-color: rgb(160, 160, 160);
+    transition: 0.4s ease;
+}

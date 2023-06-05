@@ -1,0 +1,88 @@
+body{
+    overflow-x: hidden;
+    background-color: rgb(125, 184, 159);
+}
+
+.main-header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100vw;
+    color: darkslategray;
+    z-index: 1;
+    transition: 0.4s ease-out;
+}
+
+.main-header a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.main-header .logo{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 75px;
+    font-size: 25px;
+}
+
+.main-header #logout{
+    margin-right: 50px;
+    width: 125px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: rgba(250, 30, 30, 0.925);
+    color: inherit;
+    font-size: 25px;
+    border-radius: 2.5px;
+    padding: 2.5px 0px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.main-header #logout:hover{
+    background-color: rgba(255, 73, 73, 0.95);
+    transition: 0.4s ease;
+}
+
+#find-game{
+    position: absolute;
+    width: 250px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    background-color: rgb(212, 212, 212);
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    transition: 0.4s ease;
+}
+
+#find-game:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: whitesmoke;
+    transition: 0.4s ease;
+}
+
+/*Customize scrollbar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(212, 212, 212);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(129, 129, 129);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: darkslategray;
+}

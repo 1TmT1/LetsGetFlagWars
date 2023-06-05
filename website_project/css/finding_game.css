@@ -1,0 +1,65 @@
+body{
+    overflow-x: hidden;
+    background-color: rgb(125, 184, 159);
+}
+
+.main-header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100vw;
+    padding: 0 10vw;
+    color: darkslategray;
+    z-index: 1;
+    transition: 0.4s ease-out;
+}
+
+.main-header a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.main-header .logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+/* #timer{
+    font-family: 'Nunito', sans-serif;
+    font-size: 35px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 35px;
+    background-color: rgba(128, 128, 128, 0.925);
+    border-radius: 10px;
+} */
+
+#container{
+    background-color: rgba(128, 128, 128, 0.925);
+    width: fit-content;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+
+li{
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+li span{
+    display: block;
+    font-size: 35px;
+}

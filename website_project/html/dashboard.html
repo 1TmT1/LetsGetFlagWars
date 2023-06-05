@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/chat.css">
+        <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>DASHBOARD</title>
+        <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+        <script defer src="js/chat_client.js"></script>
+        <script defer src="js/dashboard.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="logo">
+                <a href="/">LGCW</a>
+            </div>
+            <!-- <button id="logout" type="button" onclick="logout()">logout</button> -->
+            <form action="logout" method="post">
+                <button type="submit" id="logout" onclick="logout()">logout</button>
+            </form>
+        </header>
+        <a href="finding-game"><button type="button" id="find-game">Find Game</button></a>
+        <div id="chat">
+            <div id="chat-title">
+                <h2>Live Chat</h2>
+                <button type="button" onclick="updateScroll()">Scroll to End</button>
+            </div>
+            <div id="message-container" onscroll="isBottom()"></div>
+            <form id="send-container">
+                <input type="text" id="message-input">
+                <button type="submit" id="send-button">Send!</button>
+            </form>
+        </div>
+    </body>
+</html>
