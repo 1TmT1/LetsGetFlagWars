@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+  lb:
+    image: haproxy
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+  ws1:
+    image: questwarsapp
+    environment:
+      - APPID=1
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 2s
+        max_attempts: 3
+        window: 100s
+  ws2:
+    image: questwarsapp
+    environment:
+      - APPID=2
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 2s
+        max_attempts: 3
+        window: 100s
+  ws3:
+    image: questwarsapp
+    environment:
+      - APPID=3
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 2s
+        max_attempts: 3
+        window: 100s
+  ws4:
+    image: questwarsapp
+    environment:
+      - APPID=4
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 2s
+        max_attempts: 3
+        window: 100s
+  rds:
+    image: redis
