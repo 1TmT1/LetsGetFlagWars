@@ -1,10 +1,10 @@
 # Let's Get Flag Wars
 
-NodeJS - backend & middleware development
-SQL - Database
-Python - Database access
-HTML, CSS, JS - Frontend development
-3D modeling - Blender(doesn't contain the 3d models only pics of them)
-Illustrator & Photoshop - Design & polish the sprites and images
+NodeJS - backend & middleware development<br/>
+SQL - Database<br/>
+Python - Database access<br/>
+HTML, CSS, JS - Frontend development<br/>
+3D modeling - Blender(doesn't contain the 3d models only pictures of them)<br/>
+Illustrator & Photoshop - Design & polish the sprites and images<br/>
 
 Note - Support both Computer & Moblie views ;-)
