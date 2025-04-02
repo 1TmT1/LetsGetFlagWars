@@ -1,4 +1,4 @@
-# Let's Get Flag Wars - School Project
+# Let's Get Flag Wars
 
 NodeJS - backend & middleware development
 SQL - Database
