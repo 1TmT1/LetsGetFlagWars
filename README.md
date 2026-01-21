@@ -1,5 +1,7 @@
 # Let's Get Flag Wars
 
+[Video of project's showcase](https://youtu.be/BJGVPeEvPiY)
+
 NodeJS - backend & middleware development<br/>
 SQL - Database<br/>
 Python - Database access<br/>
